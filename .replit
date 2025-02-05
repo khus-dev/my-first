@@ -9,3 +9,14 @@ run = ["sh", "-c", "python app.py"]
 [[ports]]
 localPort = 3000
 externalPort = 3000
+
+[workflows]
+runButton = "Run"
+
+[[workflows.workflow]]
+name = "Run"
+author = 39356793
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python app.py"
